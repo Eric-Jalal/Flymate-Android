@@ -14,27 +14,15 @@ import net.teslaa.flymate.weather.CurrentWeatherIcons;
 
 import java.io.IOException;
 
-/**
- * Base class for getting weather data from various sources on the net.
- * Provides a default implementation that gets data from a REST API in the background.
- * Subclasses need to provide the URL to call for a specific API and functionality to parse
- * the response from the API into a CurrentWeatherIcons object, which is returned through
- * the onSuccess() callback.
- */
 public abstract class WeatherSource {
     public static final String TAG = WeatherSource.class.getSimpleName();
 
-    protected final WeatherSourceCallback mCallback;
+    private final WeatherSourceCallback mCallback;
 
-    public WeatherSource(WeatherSourceCallback callback) {
+    WeatherSource(WeatherSourceCallback callback) {
         mCallback = callback;
     }
 
-    /**
-     * Gets forecast data from the Internet in the background.
-     * @param latitude  Latitude of location you are requesting the forecast for.
-     * @param longitude Longitude of location you are requesting the forecast for.
-     */
     public void getForecast(double latitude, double longitude) {
         String forecastUrl = getForecastUrl(latitude, longitude);
 
@@ -64,20 +52,8 @@ public abstract class WeatherSource {
         });
     }
 
-    /**
-     * Builds the CurrentWeatherIcons from the data retrieved from API.
-     * @param forecastData The forecast data as retrieved from the source in String form.
-     * @return The complete complete current, hourly and daily forecast.
-     * @throws WeatherSourceException
-     */
     protected abstract CurrentWeatherIcons parseForecastDetails(String forecastData) throws WeatherSourceException;
 
-    /**
-     * Builds a URL appropriate for the API of the site you're using for forecast data.
-     * @param latitude Latitude of location you are requesting the forecast for.
-     * @param longitude Latitude of location you are requesting the forecast for.
-     * @return URL for a request that will return forecast data for the location in JSON format.
-     */
     protected abstract String getForecastUrl(double latitude, double longitude);
 
 }

@@ -19,7 +19,6 @@ public class OpenWeather extends WeatherSource {
         super(callback);
     }
 
-
     @Override
     protected String getForecastUrl(double latitude, double longitude) {
         return "https://api.openweathermap.org/data/2.5/weather?units=metric&"
@@ -28,12 +27,6 @@ public class OpenWeather extends WeatherSource {
                 "&appid=" + API_KEY;
     }
 
-    /**
-     * Builds the CurrentWeatherIcons from the data retrieved from API.
-     * @param forecastData The forecast data as retrieved from the source in String form.
-     * @return The complete complete current, hourly and daily forecast.
-     * @throws WeatherSourceException
-     */
     @Override
     protected CurrentWeatherIcons parseForecastDetails(String forecastData) throws WeatherSourceException {
         CurrentWeatherIcons forecast = new CurrentWeatherIcons();
@@ -47,14 +40,7 @@ public class OpenWeather extends WeatherSource {
         return forecast;
     }
 
-
-    /**
-     * Parses forecast data for the current weather conditions.
-     * @param jsonData The forecast data as retrieved from the source in String form.
-     * @return The Current weather conditions.
-     * @throws JSONException
-     */
-    protected Current getCurrentDetails(String jsonData) throws JSONException {
+    private Current getCurrentDetails(String jsonData) throws JSONException {
         JSONObject forecast = new JSONObject(jsonData);
         Current current = new Current();
 

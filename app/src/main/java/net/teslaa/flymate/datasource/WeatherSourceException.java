@@ -9,8 +9,6 @@ class WeatherSourceException extends Exception {
     WeatherSourceException(String detailMessage) {
         super(detailMessage);
     }
-
-
     WeatherSourceException(Throwable throwable) {
         super(throwable);
     }

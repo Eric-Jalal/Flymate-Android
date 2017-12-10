@@ -20,34 +20,31 @@ public class CurrentWeatherIcons {
         // clear-day, clear-night, rain, snow, sleet, wind, fog, cloudy, partly-cloudy-day, or partly-cloudy-night
         int iconId = R.drawable.clear_day;
 
-        if (iconString.equals("clear-day")) {
+        if (iconString.equals("01d")) {
             iconId = R.drawable.clear_day;
         }
-        else if (iconString.equals("clear-night")) {
+        else if (iconString.equals("01n")) {
             iconId = R.drawable.clear_night;
         }
-        else if (iconString.equals("rain")) {
+        else if (iconString.equals("09d") || iconString.equals("09n") || iconString.equals("10d") || iconString.equals("10n")) {
             iconId = R.drawable.rain;
         }
-        else if (iconString.equals("snow")) {
+        else if (iconString.equals("13d") || iconString.equals("13n")) {
             iconId = R.drawable.snow;
         }
-        else if (iconString.equals("sleet")) {
-            iconId = R.drawable.sleet;
-        }
-        else if (iconString.equals("wind")) {
+        else if (iconString.equals("11d") || iconString.equals("11n")) {
             iconId = R.drawable.wind;
         }
-        else if (iconString.equals("fog")) {
+        else if (iconString.equals("50d") || iconString.equals("50n")) {
             iconId = R.drawable.fog;
         }
-        else if (iconString.equals("cloudy")) {
+        else if (iconString.equals("03d") || iconString.equals("03n")) {
             iconId = R.drawable.cloudy;
         }
-        else if (iconString.equals("partly-cloudy-day")) {
+        else if (iconString.equals("02d") || iconString.equals("04d")) {
             iconId = R.drawable.partly_cloudy;
         }
-        else if (iconString.equals("partly-cloudy-night")) {
+        else if (iconString.equals("04n") || iconString.equals("02n")) {
             iconId = R.drawable.cloudy_night;
         }
         return iconId;

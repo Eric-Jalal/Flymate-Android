@@ -8,14 +8,6 @@ import net.teslaa.flymate.weather.CurrentWeatherIcons;
 
 public interface WeatherSourceCallback {
 
-    /**
-     * Called when the forecast is successfully retrieved and parsed.
-     * @param forecast The forecast that was retrieved by the WeatherSource in the background.
-     */
     void onSuccess(CurrentWeatherIcons forecast);
-
-    /**
-     *  Called if we weren't able to retrieve the weather forecast for whatever reason.
-     */
     void onFailure(Exception e);
 }

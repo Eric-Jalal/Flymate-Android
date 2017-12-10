@@ -231,11 +231,7 @@ public class MainActivity extends AppCompatActivity implements WeatherSourceCall
     }
 
     /**
-     * This is an override of onRequestPermissionResult to take the after ward of user selection of YES/NO to the dialog box of asking for permissions, in hand :)
-     *
-     * @param requestCode
-     * @param permissions
-     * @param grantResults
+     * This is an override of onRequestPermissionResult to take YES/NO of the dialog
      */
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
@@ -251,12 +247,10 @@ public class MainActivity extends AppCompatActivity implements WeatherSourceCall
     private void methodRequiredPermissions() {
         String[] perms = {Manifest.permission.INTERNET, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_WIFI_STATE,};
         if (EasyPermissions.hasPermissions(this, perms)) {
-            //Toast.makeText(getApplicationContext(), "دسترسی مورد نیاز اخذ شد", Toast.LENGTH_SHORT).show();
 
         } else {
-            EasyPermissions.requestPermissions(this, "اجازه دسترسی به تلفن میدهید؟", READ_PHONE_STATE, perms);
+            EasyPermissions.requestPermissions(this, "These access is mandatory", READ_PHONE_STATE, perms);
 
-            //Toast.makeText(getApplicationContext(), "اجازه دسترسی به تلفن ضروری است", Toast.LENGTH_SHORT).show();
         }
     }
 }
