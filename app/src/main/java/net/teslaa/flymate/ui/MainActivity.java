@@ -245,12 +245,11 @@ public class MainActivity extends AppCompatActivity implements WeatherSourceCall
      */
     @AfterPermissionGranted(READ_PHONE_STATE)
     private void methodRequiredPermissions() {
-        String[] perms = {Manifest.permission.INTERNET, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_WIFI_STATE,};
+        String[] perms = {Manifest.permission.INTERNET, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_WIFI_STATE};
         if (EasyPermissions.hasPermissions(this, perms)) {
 
         } else {
             EasyPermissions.requestPermissions(this, "These access is mandatory", READ_PHONE_STATE, perms);
-
         }
     }
 }
