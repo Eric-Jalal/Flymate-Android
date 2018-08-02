@@ -29,5 +29,4 @@ dependencies {
     implementation 'pub.devrel:easypermissions:0.4.3'
     implementation 'com.airbnb.android:lottie:2.1.0'
     implementation 'com.google.firebase:firebase-ads:15.0.1'
-
 }
