@@ -92,8 +92,7 @@ public class MainActivity extends AppCompatActivity implements WeatherSourceCall
         SmartLocation
                 .with(this)
                 .location()
-                .provider(new LocationGooglePlayServicesWithFallbackProvider(this))
-                .config(LocationParams.LAZY)
+                .oneFix()
                 .start(new OnLocationUpdatedListener() {
                     @Override
                     public void onLocationUpdated(Location location) {
