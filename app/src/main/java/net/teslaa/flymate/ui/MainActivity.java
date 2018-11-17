@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity implements WeatherSourceCall
     private double myLatitude;
     private double myLongitude;
     private String mLocationName = "Default Locale";
-    private LottieAnimationView lottieBackground;
 
     @SuppressLint("MissingPermission")
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements WeatherSourceCall
 
         methodRequiredPermissions();
 
-        lottieBackground = findViewById(R.id.background_lottie);
+        LottieAnimationView lottieBackground = findViewById(R.id.background_lottie);
         lottieBackground.setAnimation("gradient_animated_background.json");
         lottieBackground.playAnimation();
         lottieBackground.setSpeed(0.5f);
