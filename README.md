@@ -1,4 +1,4 @@
-# [Flymate](https://www.froala.com/design-blocks) &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Get%20over%20170%20free%20design%20blocks%20based%20on%20Bootstrap%204&url=https://www.froala.com/design-blocks&via=froala&hashtags=bootstrap,design,templates,blocks,developers) &nbsp;[![Slack](https://froala-design-blocks-slack.herokuapp.com/badge.svg)](https://froala-design-blocks-slack.herokuapp.com/)
+# [Flymate](https://www.froala.com/design-blocks) &nbsp; [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Check%20this%20repository%20out!%20Flymate%20is%20a%20weather%20app!%204&url=http://teslaa.net&hashtags=flymate,google,android,java,developers)
 [![CircleCI](https://circleci.com/gh/TESLAA/Flymate.svg?style=svg)](https://circleci.com/gh/TESLAA/Flymate)
 [![API](https://img.shields.io/badge/API-27%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=27)
 ![Hackage-Deps](https://img.shields.io/hackage-deps/v/lens.svg)
