@@ -11,3 +11,8 @@
 ## Another Weather App
 
 a weather app with using openweatherapi.com as api provider.
+
+This weather app is a very simple application, actually at this milestone you will face with an application very useful without any need of configuration, just tap on launcher icon and well, you get your answer! but wait for future, we want to rock it on to the next level!
+
+
+<a href='https://play.google.com/store/apps/details?id=net.teslaa.flymate&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' style="height 120px; width: 50px;" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
