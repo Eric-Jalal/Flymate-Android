@@ -15,10 +15,20 @@
 
 default_platform(:android)
 
+lane :playstore do
+  gradle(
+    task: 'assemble',
+    build_type: 'Release'
+  )
+  upload_to_play_store(
+    track: 'rollout',
+    rollout: '0.5'
+  )
+end
+
 platform :android do
-  desc "Runs all the tests"
-  lane :test do
-    gradle(task: "test")
+  before_all do
+    setup_circle_ci
   end
 
   desc "Submit a new Beta Build to Crashlytics Beta"
