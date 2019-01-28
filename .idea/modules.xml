@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Flymate.iml" filepath="$PROJECT_DIR$/Flymate.iml" />
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/.idea/Flymate.iml" filepath="$PROJECT_DIR$/.idea/Flymate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Flymate2.iml" filepath="$PROJECT_DIR$/Flymate2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Flymate4.iml" filepath="$PROJECT_DIR$/Flymate4.iml" />
-=======
->>>>>>> 8058d6d2835c895d5bb626487f330ae312e428bc
+      <module fileurl="file://$PROJECT_DIR$/Flymate-Android.iml" filepath="$PROJECT_DIR$/Flymate-Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/data/data.iml" filepath="$PROJECT_DIR$/data/data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/domain/domain.iml" filepath="$PROJECT_DIR$/domain/domain.iml" />
     </modules>
   </component>
 </project>

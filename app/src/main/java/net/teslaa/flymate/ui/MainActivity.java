@@ -19,12 +19,12 @@ import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 
+import net.teslaa.data.OpenWeather;
+import net.teslaa.data.WeatherSource;
+import net.teslaa.data.WeatherSourceCallback;
+import net.teslaa.domain.Current;
+import net.teslaa.domain.CurrentWeatherIcons;
 import net.teslaa.flymate.R;
-import net.teslaa.flymate.datasource.OpenWeather;
-import net.teslaa.flymate.datasource.WeatherSource;
-import net.teslaa.flymate.datasource.WeatherSourceCallback;
-import net.teslaa.flymate.weather.Current;
-import net.teslaa.flymate.weather.CurrentWeatherIcons;
 
 import java.io.IOException;
 import java.util.List;
@@ -35,8 +35,6 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.nlopez.smartlocation.OnLocationUpdatedListener;
 import io.nlopez.smartlocation.SmartLocation;
-import io.nlopez.smartlocation.location.config.LocationParams;
-import io.nlopez.smartlocation.location.providers.LocationGooglePlayServicesWithFallbackProvider;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
 
@@ -248,5 +246,10 @@ public class MainActivity extends AppCompatActivity implements WeatherSourceCall
         } else {
             EasyPermissions.requestPermissions(this, "These access is mandatory", READ_PHONE_STATE, perms);
         }
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }

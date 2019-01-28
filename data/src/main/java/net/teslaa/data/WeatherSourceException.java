@@ -1,4 +1,4 @@
-package net.teslaa.flymate.datasource;
+package net.teslaa.data;
 
 /**
  * By teslaa on 12/7/17 at Flymate.

@@ -1,4 +1,4 @@
-package net.teslaa.flymate.weather;
+package net.teslaa.domain;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
