@@ -1,5 +1,6 @@
 package net.teslaa.flymate.ui;
 
+import net.teslaa.flymate.BuildConfig;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -10,8 +11,6 @@ import org.json.JSONObject;
 
 public class OpenWeather extends WeatherSource {
 
-  private static final String API_KEY = "3c1fc1665bcfc46d841ebde49c835fd2";
-
   public OpenWeather(WeatherSourceCallback callback) {
     super(callback);
   }
@@ -21,7 +20,7 @@ public class OpenWeather extends WeatherSource {
     return "https://api.openweathermap.org/data/2.5/weather?units=metric&"
         + "lat=" + latitude +
         "&lon=" + longitude +
-        "&appid=" + API_KEY;
+        "&appid=" + BuildConfig.APIKEY;
   }
 
   @Override
