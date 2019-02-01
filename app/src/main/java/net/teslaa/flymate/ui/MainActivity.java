@@ -213,10 +213,10 @@ public class MainActivity extends AppCompatActivity implements WeatherSourceCall
     ConnectivityManager manager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
     NetworkInfo networkInfo = null;
     if (manager != null) {
-      Log.d("getActiveNetworkInfo()", "is not null");
+      Log.d(TAG, "is not null");
       networkInfo = manager.getActiveNetworkInfo();
     } else {
-      Log.d("getActiveNetworkInfo()", "is null");
+      Log.d(TAG, "is null");
     }
     boolean isAvailable = false;
     if (networkInfo != null && networkInfo.isConnected()) {
