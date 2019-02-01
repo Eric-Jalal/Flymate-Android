@@ -1,4 +1,4 @@
-package net.teslaa.domain;
+package net.teslaa.flymate.ui;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

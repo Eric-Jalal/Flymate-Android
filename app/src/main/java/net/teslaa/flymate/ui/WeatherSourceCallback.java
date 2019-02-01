@@ -1,4 +1,4 @@
-package net.teslaa.data;
+package net.teslaa.flymate.ui;
 
 import net.teslaa.flymate.weather.CurrentWeatherIcons;
 
