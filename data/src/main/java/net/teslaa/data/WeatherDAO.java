@@ -5,6 +5,6 @@ package net.teslaa.data;
  */
 
 
-public interfacegit WeatherDAO {
+public interface WeatherDAO {
 
 }
