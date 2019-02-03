@@ -15,6 +15,12 @@ public class OpenWeather extends WeatherSource {
     super(callback);
   }
 
+  static {
+    System.loadLibrary("keys");
+  }
+
+  private native String getNativeKey1();
+  private String key = getNativeKey1();
   @Override
   protected String getForecastUrl(double latitude, double longitude) {
     return "https://api.openweathermap.org/data/2.5/weather?units=metric&"

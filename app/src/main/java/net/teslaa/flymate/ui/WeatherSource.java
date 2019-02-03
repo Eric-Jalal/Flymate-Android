@@ -4,11 +4,6 @@ package net.teslaa.flymate.ui;
  * By teslaa on 12/7/17 at Flymate.
  */
 
-import com.squareup.okhttp.Call;
-import com.squareup.okhttp.Callback;
-import com.squareup.okhttp.OkHttpClient;
-import com.squareup.okhttp.Request;
-import com.squareup.okhttp.Response;
 import java.io.IOException;
 
 public abstract class WeatherSource {

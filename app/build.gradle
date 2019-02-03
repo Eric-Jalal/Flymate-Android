@@ -40,6 +40,12 @@ android {
         it.buildConfigField 'String', 'APIKEY', GoolgeAPIKey
     }
 
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+
 }
 
 
