@@ -16,3 +16,9 @@ This weather app is a very simple application, actually at this milestone you wi
 
 
 <a href='https://play.google.com/store/apps/details?id=net.teslaa.flymate&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' style="height 120px; width: 50px;" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+
+
+## Donation
+If this project help you reduce time to develop, you can give me a cup of coffee :) 
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DP2GX9888JYRL&source=url)
