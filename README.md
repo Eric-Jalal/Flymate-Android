@@ -19,6 +19,6 @@ This weather app is a very simple application, actually at this milestone you wi
 
 
 ## Donation
-If this project help you reduce time to develop, you can give me a cup of coffee :) 
+If this project somehow helps you, please help me to keep it up :paw_prints:
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DP2GX9888JYRL&source=url)
