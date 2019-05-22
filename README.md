@@ -4,6 +4,7 @@
 ![Hackage-Deps](https://img.shields.io/hackage-deps/v/lens.svg)
 [![GitHub stars](https://img.shields.io/github/stars/TESLAA/Flymate.svg)](https://github.com/TESLAA/Flymate/stargazers)
 [![GitHub followers](https://img.shields.io/github/followers/espadrine.svg?label=Follow&style=flat-square)](https://github.com/TESLAA/Flymate)
+[![DepShield Badge](https://depshield.sonatype.org/badges/owner/repository/depshield.svg)](https://depshield.github.io)
 
 
 
